@@ -12,7 +12,7 @@ function nowServing(array) {
 }
 function currentLine(array) {
   var end = "The line is currently: ";
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i <= array.length; i++) {
     if (i+1 < array.length) {
       end = end.concat(`${i+1}. ${array[i]}, `)
     } else if (i+1 === array.length) {
