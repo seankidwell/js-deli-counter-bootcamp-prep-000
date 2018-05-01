@@ -17,7 +17,7 @@ function currentLine(array) {
       end = end.concat(`${i+1}. ${array[i]}, `)
     } else if (i+1 === array.length) {
       end = end.concat(`${i+1}. ${array[i]}`)
-    } else {
+    } else if (array.lengt===0) {
       end = "The line is currently empty.";
     }
   }
