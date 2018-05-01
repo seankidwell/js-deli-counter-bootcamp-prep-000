@@ -14,9 +14,9 @@ function currentLine(array) {
   var end = "The line is currently: ";
   for (var i = 0; i < array.length; i++) {
     if (i+1 < array.length) {
-      end.concat(`${i+1}. ${array[i]}, `)
+      end = end.concat(`${i+1}. ${array[i]}, `)
     } else if (i+1 === array.length) {
-      end.concat(`${i+1}. ${array[i]}`)
+      end = end.concat(`${i+1}. ${array[i]}`)
     } else {
       end = "The line is currently empty.";
     }
